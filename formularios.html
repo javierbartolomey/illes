@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>Formulari de registre</h1>
+    <form action="">
+        <label for="nom">Nom:</label><br/>
+        <input type="text" name="nom" id="nom" /><br/>
+        <label for="cognoms">Cognoms:</label><br/>
+        <input type="text" name="cognoms" id="cognoms" /><br/>
+        <label for="email">Email:</label><br/>
+        <input type="text" name="email" id="email" required placeholder="nom@exemple.com" /><br/>
+        <label for="contrasenya">Contrasenya:</label><br/>
+        <input type="password" name="contrasenya" id="contrasenya" /><br/>
+        <label for="data_naixement">Data de naixement:</label><br/>
+        <input type="date" name="data_naixement" id="data_naixement" /><br/>
+        <label>Genere:</label><br/>
+        <input type="radio" name="Genere" id="home" />
+        <label for="home">Home</label><br/>
+        <input type="radio" name="Genere" id="dona" />
+        <label for="home">Dona</label><br/>
+        <input type="radio" name="Genere" id="altre" />
+        <label for="home">Fracasado (Ruben)</label><br/>
+        <label for="pais">Pais de residencia:</label><br/>
+        <select name="pais" id="pais">
+            <option value="">--SELECCIONA UN PAIS--</option>
+            <option value="ES">Espanya</option>
+            <option value="FR">França</option>
+            <option value="IT">Italia</option>
+            <option value="MO">Morolandia</option>
+        </select><br/>
+        <label for="raza">Raza:</label><br/>
+        <select name="raza" id="raza">
+            <option value="">--SELECCIONA TU RAZA--</option>
+            <option value="ES">Negro</option>
+            <option value="FR">Moro</option>
+            <option value="NET">Netanyahu</option>
+            <option value="GAY">Gay</option>
+            <option value="N">Normal (Blanco hetero)</option>
+        </select><br/>
+        <label for=""></label>Tecnologia<br />
+        <input type="checkbox" name="Interesos" id="Tecnologia"><br />
+        <label for=""></label>Musica<br />
+        <input type="checkbox" name="Interesos" id="musica"><br />
+        <label for=""></label>Esports<br />
+        <input type="checkbox" name="Interesos" id="esports"><br />
+
+        <label for="missatge">Comentaris adicionals</label>
+        <textarea name="missatge" id="missatge" rows="4" cols="40" placeholder="Escriu el teu missatge aqui"></textarea><br />
+        
+        <button type="submit">Enviar</button>
+        <button type="reset">Netejar formulari</button>
+    </form>
+</body>
+</html>
